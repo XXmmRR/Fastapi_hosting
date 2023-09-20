@@ -7,3 +7,12 @@ class UploadVideo(BaseModel):
     description: str
 
 
+class User(BaseModel):
+    id: int
+    password: str
+
+
+class GetVideo(BaseModel):
+    user: User
+    title: str
+    description: str
